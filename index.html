@@ -1,7 +1,11 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
 <head>
-<style>
+<link rel=stylesheet href=form.css>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
 body {  background-color: #3c3c3c;
         font-family:arial;
         color:white;}
@@ -10,7 +14,6 @@ div.p2 { text-align:center;
          background-color:#2F4F4F;
          padding: 5px 0px 5px 0px;
 		}
-
 div.p6 { box-sizing: border-box;
               width: 30px;
               height:30px;
@@ -44,26 +47,25 @@ font-size:18px;
 color:white;}
 hr  { width: 60%;
 color:white;}
-
-
 </style>
-<title>LINKEDIN PAGE</title>
+<title> linkdin signIn </title>
 </head>
 <body>
-<div class=p2><h1>Linked <div class=p6>in</div></h1></div>
-<div class=p1><p><b>Join to view full profiles for free !!</b></p></div><br>
+  <div class="container">
+
+
+<div class=p2><h1><b> Linked&nbsp<div class=p6>in</div></b></h1></div>
+    <div class=p1><p><b> Join to view full profiles for free!!</b></p></div>
+<br>
 <form align="center">
-<input type="text" name="fname" placeholder="First Name"><br> 
-<input type="text" name="lname" placeholder="Last Name"><br>
-<input type="email" name="email" placeholder="Email"<br>
-<input type="password" name="psw" placeholder="Password (6 or more character)"<br>
+<input type=text name=Firstname placeholder="First name"><br>
+<input type=text name=Lastname placeholder="Last name"><br>
+<input type=email placeholder=Email><br>
+<input type=password placeholder="Password(6 or more characters)" min=6><br>
 <div class=p3><p>By clicking Join now, you agree to Linkedin<b> User Agreement, Privacy Policy,</b> and <b> Cookie Policy.</b></p></div><br>
-<B><input type=button value="Join now"></B><br>
-<hr>
+<input type='button'value='Join Now' class="btn" onclick="document.location.href='submit.html'"/></br>
+
 <div class=p3><p>Already have an account? <b>Sign in</b></p></div>
-	</form>	
-	
-
-
+</form>
+</div>
 </body>
-</html>
